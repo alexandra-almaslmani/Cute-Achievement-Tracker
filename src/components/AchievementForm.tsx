@@ -33,47 +33,47 @@ const AchievementForm = ({ selectedDate, onSave }: AchievementFormProps) => {
   };
 
   return (
-    <div className="pixel-border bg-card rounded-lg p-6">
-      <h3 className="text-lg font-pixel text-foreground mb-4">
-        Add Achievement for {format(selectedDate, 'MMM d, yyyy')}
+    <div className="pixel-border bg-card rounded-lg p-4">
+      <h3 className="text-sm font-pixel text-foreground mb-3">
+        Add for {format(selectedDate, 'MMM d')}
       </h3>
       
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form onSubmit={handleSubmit} className="space-y-3">
         <div>
-          <label className="block text-sm font-pixel text-foreground mb-2">
+          <label className="block text-xs font-pixel text-foreground mb-1">
             Title *
           </label>
           <Input
             value={title}
             onChange={(e) => setTitle(e.target.value)}
             placeholder="What did you achieve?"
-            className="font-orbitron"
+            className="font-orbitron text-sm h-8"
             required
           />
         </div>
         
         <div>
-          <label className="block text-sm font-pixel text-foreground mb-2">
+          <label className="block text-xs font-pixel text-foreground mb-1">
             Description
           </label>
           <Textarea
             value={description}
             onChange={(e) => setDescription(e.target.value)}
-            placeholder="Tell us more about it..."
-            className="font-orbitron min-h-[80px]"
+            placeholder="Tell us more..."
+            className="font-orbitron text-sm min-h-[60px] resize-none"
           />
         </div>
         
         <div>
-          <label className="block text-sm font-pixel text-foreground mb-2">
+          <label className="block text-xs font-pixel text-foreground mb-1">
             Type *
           </label>
-          <div className="grid grid-cols-3 gap-2">
+          <div className="grid grid-cols-3 gap-1">
             <button
               type="button"
               onClick={() => setType('win')}
               className={`
-                pixel-button py-3 px-4 rounded font-pixel text-xs text-center transition-all
+                pixel-button py-2 px-2 rounded font-pixel text-[10px] text-center transition-all hover:scale-105
                 ${type === 'win' 
                   ? 'achievement-win text-white' 
                   : 'bg-secondary text-secondary-foreground hover:bg-secondary/80'
@@ -86,7 +86,7 @@ const AchievementForm = ({ selectedDate, onSave }: AchievementFormProps) => {
               type="button"
               onClick={() => setType('failure')}
               className={`
-                pixel-button py-3 px-4 rounded font-pixel text-xs text-center transition-all
+                pixel-button py-2 px-2 rounded font-pixel text-[10px] text-center transition-all hover:scale-105
                 ${type === 'failure' 
                   ? 'achievement-failure text-white' 
                   : 'bg-secondary text-secondary-foreground hover:bg-secondary/80'
@@ -99,7 +99,7 @@ const AchievementForm = ({ selectedDate, onSave }: AchievementFormProps) => {
               type="button"
               onClick={() => setType('event')}
               className={`
-                pixel-button py-3 px-4 rounded font-pixel text-xs text-center transition-all
+                pixel-button py-2 px-2 rounded font-pixel text-[10px] text-center transition-all hover:scale-105
                 ${type === 'event' 
                   ? 'achievement-event text-white' 
                   : 'bg-secondary text-secondary-foreground hover:bg-secondary/80'
@@ -114,7 +114,7 @@ const AchievementForm = ({ selectedDate, onSave }: AchievementFormProps) => {
         <Button
           type="submit"
           disabled={!title.trim()}
-          className="w-full pixel-button bg-primary hover:bg-primary/90 text-primary-foreground font-pixel"
+          className="w-full pixel-button bg-primary hover:bg-primary/90 text-primary-foreground font-pixel text-xs h-8 hover:scale-105 transition-transform"
         >
           Save Achievement
         </Button>

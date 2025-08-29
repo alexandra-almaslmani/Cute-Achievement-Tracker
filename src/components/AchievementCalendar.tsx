@@ -34,36 +34,36 @@ const AchievementCalendar = ({ achievements, selectedDate, onDateSelect }: Achie
   };
 
   return (
-    <div className="pixel-border bg-card rounded-lg p-6">
-      <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-pixel text-foreground">
+    <div className="pixel-border bg-card rounded-lg p-4">
+      <div className="flex items-center justify-between mb-4">
+        <h2 className="text-lg font-pixel text-foreground">
           {format(selectedDate, 'MMMM yyyy')}
         </h2>
-        <div className="flex gap-2">
+        <div className="flex gap-1">
           <button
             onClick={() => onDateSelect(new Date(selectedDate.getFullYear(), selectedDate.getMonth() - 1, 1))}
-            className="pixel-button bg-secondary text-secondary-foreground px-3 py-2 rounded font-pixel text-xs"
+            className="pixel-button bg-secondary text-secondary-foreground px-2 py-1 rounded font-pixel text-xs hover:scale-105 transition-transform"
           >
             ←
           </button>
           <button
             onClick={() => onDateSelect(new Date(selectedDate.getFullYear(), selectedDate.getMonth() + 1, 1))}
-            className="pixel-button bg-secondary text-secondary-foreground px-3 py-2 rounded font-pixel text-xs"
+            className="pixel-button bg-secondary text-secondary-foreground px-2 py-1 rounded font-pixel text-xs hover:scale-105 transition-transform"
           >
             →
           </button>
         </div>
       </div>
       
-      <div className="grid grid-cols-7 gap-2 mb-4">
+      <div className="grid grid-cols-7 gap-1 mb-2">
         {['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map((day) => (
-          <div key={day} className="text-center text-xs font-pixel text-muted-foreground p-2">
+          <div key={day} className="text-center text-[10px] font-pixel text-muted-foreground p-1">
             {day}
           </div>
         ))}
       </div>
       
-      <div className="grid grid-cols-7 gap-2">
+      <div className="grid grid-cols-7 gap-1 mb-4">
         {days.map((date) => {
           const dayAchievements = getAchievementsForDay(date);
           const isSelected = isSameDay(date, selectedDate);
@@ -73,17 +73,17 @@ const AchievementCalendar = ({ achievements, selectedDate, onDateSelect }: Achie
               key={date.toISOString()}
               onClick={() => onDateSelect(date)}
               className={`
-                aspect-square p-2 rounded-lg text-xs font-pixel transition-all duration-200
-                pixel-button relative
+                w-8 h-8 rounded text-[10px] font-pixel transition-all duration-200
+                pixel-button relative hover:scale-110 active:scale-95
                 ${getDayColorClass(dayAchievements)}
-                ${isSelected ? 'ring-2 ring-ring' : ''}
+                ${isSelected ? 'ring-1 ring-ring scale-110' : ''}
               `}
             >
               <span className={`${dayAchievements.length > 0 ? 'text-white drop-shadow-[1px_1px_0px_rgba(0,0,0,0.5)]' : 'text-foreground'}`}>
                 {format(date, 'd')}
               </span>
               {dayAchievements.length > 0 && (
-                <div className="absolute -top-1 -right-1 bg-background border border-border rounded-full w-5 h-5 flex items-center justify-center text-[8px] font-pixel">
+                <div className="absolute -top-0.5 -right-0.5 bg-background border border-border rounded-full w-3 h-3 flex items-center justify-center text-[6px] font-pixel">
                   {dayAchievements.length}
                 </div>
               )}
@@ -92,17 +92,17 @@ const AchievementCalendar = ({ achievements, selectedDate, onDateSelect }: Achie
         })}
       </div>
       
-      <div className="flex items-center justify-center gap-4 mt-6 text-xs font-pixel">
-        <div className="flex items-center gap-2">
-          <div className="w-4 h-4 achievement-win rounded"></div>
+      <div className="flex items-center justify-center gap-3 text-[10px] font-pixel">
+        <div className="flex items-center gap-1">
+          <div className="w-3 h-3 achievement-win rounded-sm"></div>
           <span>Wins</span>
         </div>
-        <div className="flex items-center gap-2">
-          <div className="w-4 h-4 achievement-failure rounded"></div>
+        <div className="flex items-center gap-1">
+          <div className="w-3 h-3 achievement-failure rounded-sm"></div>
           <span>Failures</span>
         </div>
-        <div className="flex items-center gap-2">
-          <div className="w-4 h-4 achievement-event rounded"></div>
+        <div className="flex items-center gap-1">
+          <div className="w-3 h-3 achievement-event rounded-sm"></div>
           <span>Events</span>
         </div>
       </div>

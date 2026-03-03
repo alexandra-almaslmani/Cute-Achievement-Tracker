@@ -9,7 +9,7 @@
 
 <br><br><br><br><br><br><br><br><br><br><br>
 
-# Welcome to your Lovable project
+# It is a project by Lovable tool
 
 ## Project info
 

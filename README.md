@@ -9,13 +9,13 @@
 
 <br><br><br><br><br><br><br><br><br><br><br>
 
-# It is a project by Lovable tool
+### It is a project by Lovable tool
 
-## Project info
+### Project info
 
 **URL**: https://lovable.dev/projects/64683832-1b46-4855-a6b0-bd88b60a550b
 
-## How can I edit this code?
+### How can I edit this code?
 
 There are several ways of editing your application.
 
@@ -61,7 +61,7 @@ npm run dev
 - Click on "New codespace" to launch a new Codespace environment.
 - Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## What technologies are used for this project?
+### What technologies are used for this project?
 
 This project is built with:
 
@@ -71,11 +71,11 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
+### How can I deploy this project?
 
 Simply open [Lovable](https://lovable.dev/projects/64683832-1b46-4855-a6b0-bd88b60a550b) and click on Share -> Publish.
 
-## Can I connect a custom domain to my Lovable project?
+### Can I connect a custom domain to my Lovable project?
 
 Yes, you can!
 

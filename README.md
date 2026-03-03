@@ -1,3 +1,14 @@
+# Cute Achievement Tracker ✨
+
+<img width="1044" height="650" alt="image" src="https://github.com/user-attachments/assets/67d6c8ee-2371-4c44-bf1e-7824c423bbf5" />
+<img width="329" height="299" alt="image" src="https://github.com/user-attachments/assets/26bd9a40-3b86-4d5e-8a03-a100efb60880" />
+<img width="326" height="254" alt="image" src="https://github.com/user-attachments/assets/766eb1e3-afad-4f1f-8385-f019158a4e9a" />
+<img width="323" height="173" alt="image" src="https://github.com/user-attachments/assets/826a6026-f878-4037-aab4-4b9a13ce9b82" />
+
+## Visit website: [https://cutetrackachieviement.lovable.app](https://cutetrackachieviement.lovable.app)
+
+<br><br><br><br><br><br><br><br><br><br><br>
+
 # Welcome to your Lovable project
 
 ## Project info

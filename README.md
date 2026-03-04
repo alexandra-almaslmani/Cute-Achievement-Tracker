@@ -5,17 +5,14 @@
 <img width="326" height="254" alt="image" src="https://github.com/user-attachments/assets/766eb1e3-afad-4f1f-8385-f019158a4e9a" />
 <img width="323" height="173" alt="image" src="https://github.com/user-attachments/assets/826a6026-f878-4037-aab4-4b9a13ce9b82" />
 
-## Visit website: [https://cutetrackachieviement.lovable.app](https://cutetrackachieviement.lovable.app)
+#### 🔗 Visit website: [https://cutetrackachieviement.lovable.app](https://cutetrackachieviement.lovable.app)
 
-<br><br><br><br><br><br><br><br><br><br><br>
+<hr>
+<hr>
 
-### It is a project by Lovable tool
+### 🛠 Made this project with the Lovable tool
 
-### Project info
-
-**URL**: https://lovable.dev/projects/64683832-1b46-4855-a6b0-bd88b60a550b
-
-### How can I edit this code?
+#### How can I edit this code?
 
 There are several ways of editing your application.
 
@@ -61,7 +58,7 @@ npm run dev
 - Click on "New codespace" to launch a new Codespace environment.
 - Edit files directly within the Codespace and commit and push your changes once you're done.
 
-### What technologies are used for this project?
+#### What technologies are used for this project?
 
 This project is built with:
 
@@ -71,13 +68,9 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-### How can I deploy this project?
+#### How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/64683832-1b46-4855-a6b0-bd88b60a550b) and click on Share -> Publish.
-
-### Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
+Click Share in lovable -> Publish.
 
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
